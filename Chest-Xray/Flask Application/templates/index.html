@@ -1,0 +1,110 @@
+{% extends "import.html" %}
+
+{% block content %}
+<center>
+    <div style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 10px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); max-width: 500px; margin: 50px auto;">
+        <h2 style="color: #007bff;">PNEUMONIA DETECTION Using Deep Learning</h2>
+        
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg" style="margin-bottom: 20px;">
+        </form>
+
+        <div class="image-section" style="display:none; margin-top: 20px;">
+            <img id="imagePreview" class="img-responsive" src="#" style="width:300px; height:300px; border: 2px solid #007bff; border-radius: 10px;"/>
+            <br><br>
+            <div>
+                <button type="button" class="btn btn-info btn-lg" id="btn-predict">Predict!</button>
+            </div>
+        </div>
+
+        <div class="loader" style="display:none; margin: 20px 0;">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <h3 id="result" style="color: #343a40;">
+            <span> </span>
+        </h3>
+    </div>
+</center>
+
+<style>
+    body {
+        background-color: lightcyan;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .btn-success {
+        background-color: #28a745; /* Green */
+        border-color: #28a745;
+    }
+    .btn-info {
+        background-color: #007bff; /* Blue */
+        border-color: #007bff;
+    }
+    .spinner-border {
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<script>
+    // JavaScript to handle file input and prediction
+    document.getElementById('imageUpload').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.getElementById('imagePreview');
+                img.src = e.target.result;
+                img.parentElement.style.display = 'block'; // Show image section
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+
+    document.getElementById('btn-predict').addEventListener('click', function() {
+        const form = document.getElementById('upload-file');
+        const formData = new FormData(form);
+
+        // Show loader
+        document.querySelector('.loader').style.display = 'block';
+
+        fetch('/predict', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('.loader').style.display = 'none';
+            const resultElement = document.getElementById('result');
+
+            // Show only "Pneumonia" or "Normal"
+            if (data.trim().toLowerCase() === 'pneumonia') {
+                resultElement.innerHTML = "Pneumonia";
+                resultElement.style.color = 'red';
+            } else if (data.trim().toLowerCase() === 'normal') {
+                resultElement.innerHTML = "Normal";
+                resultElement.style.color = 'green';
+            } else {
+                resultElement.innerHTML = "";  // No text if result is unexpected
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.querySelector('.loader').style.display = 'none';
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = "An error occurred. Please try again.";
+            resultElement.style.color = 'black';
+        });
+    });
+</script>
+
+{% endblock %}
