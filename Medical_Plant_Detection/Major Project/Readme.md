@@ -16,7 +16,7 @@ Model link=  https://drive.google.com/file/d/1aykPcvkvYEHWWtCkem6EVtA7bmzv0K7w/v
 ![Login](screenshorts/login.png)
 
 ### 📊 input
-![Input](Medical_Plant_Detection/screenshorts/input.png)
+![Input](screenshorts/input.png)
 
 ### Prediction
-![Prediction](Medical_Plant_Detection/screenshorts/prediction.png)
+![Prediction](screenshorts/prediction.png)
