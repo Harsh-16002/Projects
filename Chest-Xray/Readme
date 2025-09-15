@@ -14,14 +14,15 @@ Note= Update Path in app.py
 ### Screenshots
 
 ### 🏠 Home Page
-<img src="{{ url_for('static', filename='Chest-Xray/screenshorts/normal.png') }}" alt="Home Page">
+![Home Page](Chest-Xray/screenshorts/normal.png)
 
 ### 📊 Prediction
-<img src="{{ url_for('static', filename='screenshorts/prediction.png') }}" alt="Prediction">
+![Prediction](Chest-Xray/screenshorts/prediction.png)
 
 ### Normal
-<img src="{{ url_for('static', filename='screenshorts/normal.png') }}" alt="Normal">
+![Normal](Chest-Xray/screenshorts/normal.png)
 
 ### Pneumonia
-<img src="{{ url_for('static', filename='screenshorts/pneumonia.png') }}" alt="Pneumonia">
+![Pneumonia](Chest-Xray/screenshorts/pneumonia.png)
+
 
