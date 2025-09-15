@@ -13,7 +13,7 @@ Model link=  https://drive.google.com/file/d/1aykPcvkvYEHWWtCkem6EVtA7bmzv0K7w/v
 
 
 ### 🏠 Login
-![Login](Medical_Plant_Detection/screenshorts/login.png)
+![Login](screenshorts/login.png)
 
 ### 📊 input
 ![Input](Medical_Plant_Detection/screenshorts/input.png)
