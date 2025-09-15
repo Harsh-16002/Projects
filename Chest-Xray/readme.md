@@ -14,15 +14,15 @@ Note= Update Path in app.py
 ### Screenshots
 
 ### 🏠 Home Page
-![Home Page](Chest-Xray/screenshorts/normal.png)
+![Home Page](Chest-Xray/screenshorts/X-ray.png)
 
 ### 📊 Prediction
-![Prediction](Chest-Xray/screenshorts/prediction.png)
+![Prediction](Chest-Xray/screenshorts/X-ray.png/prediction.png)
 
 ### Normal
-![Normal](Chest-Xray/screenshorts/normal.png)
+![Normal](Chest-Xray/screenshorts/X-ray.png/normal.png)
 
 ### Pneumonia
-![Pneumonia](Chest-Xray/screenshorts/pneumonia.png)
+![Pneumonia](Chest-Xray/screenshorts/X-ray.png/pneumonia.png)
 
 
