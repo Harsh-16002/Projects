@@ -11,16 +11,17 @@ Model link= https://drive.google.com/file/d/18tkT_AXnrzZp38S4A9y2ztbsbYuMrxCy/vi
 Note= Update Path in app.py
 
 
-### Screenshorts
+### Screenshots
 
 ### 🏠 Home Page
-![Home Page](Chest-Xray/screenshorts/normal.png)
+<img src="{{ url_for('static', filename='Chest-Xray/screenshorts/normal.png') }}" alt="Home Page">
 
 ### 📊 Prediction
-![Prediction](screenshorts/prediction.png)
+<img src="{{ url_for('static', filename='screenshorts/prediction.png') }}" alt="Prediction">
 
 ### Normal
-![Normal](screenshorts/normal.png)
+<img src="{{ url_for('static', filename='screenshorts/normal.png') }}" alt="Normal">
 
-### pneumonia
-![pneumonia](screenshorts/pneumonia.png)
+### Pneumonia
+<img src="{{ url_for('static', filename='screenshorts/pneumonia.png') }}" alt="Pneumonia">
+
