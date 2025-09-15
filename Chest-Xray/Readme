@@ -14,19 +14,13 @@ Note= Update Path in app.py
 ### Screenshorts
 
 ### 🏠 Home Page
-![Home Page](screenshorts/home.png)
+![Home Page](screenshorts/X-ray.png)
 
-### 📊 Admin
-![Admin](screenshorts/admin.png)
+### 📊 Prediction
+![Prediction](screenshorts/prediction.png)
 
-### Login
-![Login](screenshorts/login.png)
+### Normal
+![Normal](screenshorts/normal.png)
 
-### Contact
-![Contact](screenshorts/contact.png)
-
-### About
-![about](screenshorts/about.png)
-
-### Projects
-![Project](screenshorts/projects.png)
+### pneumonia
+![pneumonia](screenshorts/pneumonia.png)
