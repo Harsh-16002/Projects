@@ -13,7 +13,7 @@ Model link=  https://drive.google.com/file/d/1aykPcvkvYEHWWtCkem6EVtA7bmzv0K7w/v
 
 
 ### 🏠 Login
-![Home Page](screenshorts/.png)
+![Home Page](https://github.com/Harsh-16002/Projects/blob/79be9500689090ed784c774f664f0672be8d0924/Medical_Plant_Detection/screenshorts/login.png)
 
 ### 📊 Admin
 ![Admin](screenshorts/admin.png)
