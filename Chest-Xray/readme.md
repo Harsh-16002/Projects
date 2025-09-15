@@ -17,12 +17,12 @@ Note= Update Path in app.py
 ![Home Page](screenshorts/X-ray.png)
 
 ### 📊 Prediction
-![Prediction](screenshorts/X-ray.png/prediction.png)
+![Prediction](screenshorts/prediction.png)
 
 ### Normal
-![Normal](screenshorts/X-ray.png/normal.png)
+![Normal](screenshorts/normal.png)
 
 ### Pneumonia
-![Pneumonia](screenshorts/X-ray.png/pneumonia.png)
+![Pneumonia](screenshorts/pneumonia.png)
 
 
